@@ -81,7 +81,7 @@ todaysPlans.forEach(function(thisHour) {
 
 
     var hourArea = $("<div>")
-        .text(`${thisHour.hour}${thisHour.amORpm}`)
+        .text(`${thisHour.hour}${thisHour.amOrPm}`)
         .attr({
             "class": "col-md-2 hour"
     });
