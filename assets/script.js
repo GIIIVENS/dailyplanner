@@ -93,15 +93,21 @@ todaysPlans.forEach(function(thisHour) {
     var planData = $("<textarea>");
     hoursandhours.append(planData);
     planData.attr("id", thisHour.id);
-    if (thisHour.time < moment().format("Ha")) {
+    console.log(moment().format("H"));
+
+    if ((parseInt(thisHour.time) < parseInt(moment().format("H"))) && thisHour.amOrPm === 'am' ) {
         planData.attr ({
             "class": "past", 
         })
-    } else if (thisHour.time === moment().format("Ha")) {
+    } else if (parseInt(thisHour.time) === parseInt(moment().format("H"))) {
         planData.attr({
             "class": "present"
         })
-    } else if (thisHour.time > moment().format("Ha")) {
+    } else if ((parseInt(thisHour.time) > parseInt(moment().format("H"))) && thisHour.amOrPm === 'pm') {
+        planData.attr({
+            "class": "future"
+        })
+    } else if ((parseInt(thisHour.time) < parseInt(moment().format("H"))) && thisHour.amOrPm === 'pm') {
         planData.attr({
             "class": "future"
         })
@@ -121,9 +127,12 @@ todaysPlans.forEach(function(thisHour) {
 // button to save data to localStorage
 $(".saveBtn").on("click", function(event) {
     event.preventDefault();
+
+    saveDayLogs()
 })
 
 // saves data to localStorage
-function savedayLogs() {
-    localStorage.setItem("theDay", JSON.stringify(todaysPlans));
+function saveDayLogs(text) {
+    console.log('called saveDayLogs');
+
 }
