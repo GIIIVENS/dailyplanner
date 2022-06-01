@@ -12,7 +12,7 @@ Technologies Used
 HTML 
 CSS
 JAVASCRIPT
-Google API
+Google APIs
 
 
 ##
@@ -20,11 +20,9 @@ Google API
 Usage
 Here is an example of the final page
 
- ![a glimpse into the project]
+ [HERE IS a glimpse into the project](./assets/IMAGES/ezgif.com-gif-maker%20(5).gif)
 
 
-- [Resume](https://drive.google.com/file/d/1puzqUKntnJDFwadxEc_M6IXUsAx5SKm4/view?usp=sharing)
-- [CV](https://drive.google.com/file/d/1J5kWqx03sE8AhHTdbkIMgpsery0C5j7d/view?usp=sharing)
 
 
 ## 
