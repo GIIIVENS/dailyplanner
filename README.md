@@ -4,6 +4,8 @@ portfoliogivens
  A glipse into my newly aquired web development skills that will be built upon over time.
 For the first entry the site has operation HTML,  CSS, JAVASCRIPT, and working media queries.
 
+- [deployed version](https://giiivens.github.io/dailyplanner/)
+
 ##
 
 Technologies Used
